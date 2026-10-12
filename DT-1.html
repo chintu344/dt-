@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Virtual Reality - Overview</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080b18;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(8, 11, 24, 0.95);
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: #00eaff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00eaff;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 20px 50px;
+
+            background:
+                radial-gradient(circle at center, #182b70, #080b18 65%);
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            color: #00eaff;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 20px;
+            color: #ddd;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 30px;
+            background: #00eaff;
+            color: #080b18;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 8%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 38px;
+            color: #00eaff;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #11162b;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #26315e;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #00eaff;
+            box-shadow: 0 0 20px rgba(0, 234, 255, 0.3);
+        }
+
+        .card h3 {
+            color: #00eaff;
+            margin-bottom: 15px;
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        /* Applications */
+        .application {
+            background: #0d1225;
+        }
+
+        /* Advantages */
+        .advantage {
+            border-left: 4px solid #00eaff;
+            padding: 20px;
+            background: #11162b;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        .advantage h3 {
+            color: #00eaff;
+        }
+
+        /* Future */
+        .future {
+            background: linear-gradient(135deg, #101a3c, #080b18);
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #050711;
+            color: #aaa;
+        }
+
+        footer span {
+            color: #00eaff;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav ul {
+                gap: 10px;
+                font-size: 12px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .title {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>VR WORLD</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#working">Working</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#future">Future</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div>
+            <h1>Virtual Reality</h1>
+
+            <p>
+                Explore the fascinating world of Virtual Reality (VR),
+                a technology that creates immersive digital environments
+                and allows users to interact with computer-generated worlds.
+            </p>
+
+            <a href="#about" class="btn">Explore VR</a>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="title">What is Virtual Reality?</h2>
+
+        <div class="content">
+
+            <p>
+                Virtual Reality is a computer-generated simulation of a
+                three-dimensional environment. It allows users to experience
+                and interact with a virtual world using special devices such
+                as VR headsets, controllers and motion sensors.
+            </p>
+
+            <br>
+
+            <p>
+                VR can create realistic experiences for education,
+                entertainment, healthcare, engineering, gaming and many
+                other industries.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- How VR Works -->
+    <section id="working">
+
+        <h2 class="title">How Does VR Work?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🥽</div>
+                <h3>VR Headset</h3>
+                <p>
+                    Displays a virtual 3D environment in front of the user's eyes.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎮</div>
+                <h3>Controllers</h3>
+                <p>
+                    Allow users to interact with objects in the virtual world.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📡</div>
+                <h3>Sensors</h3>
+                <p>
+                    Track head and body movements to create realistic interaction.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Computer</h3>
+                <p>
+                    Processes graphics and creates the virtual environment.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Applications -->
+    <section class="application" id="applications">
+
+        <h2 class="title">Applications of Virtual Reality</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🎮</div>
+                <h3>Gaming</h3>
+                <p>
+                    Provides immersive gaming experiences where players
+                    can interact with virtual environments.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏥</div>
+                <h3>Healthcare</h3>
+                <p>
+                    Used for medical training, therapy and surgical simulations.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎓</div>
+                <h3>Education</h3>
+                <p>
+                    Students can explore virtual laboratories, historical
+                    places and scientific environments.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">✈️</div>
+                <h3>Training</h3>
+                <p>
+                    Pilots, engineers and other professionals can practice
+                    skills in safe virtual environments.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏠</div>
+                <h3>Real Estate</h3>
+                <p>
+                    Customers can virtually explore houses and buildings.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏭</div>
+                <h3>Engineering</h3>
+                <p>
+                    Engineers can design, visualize and test products
+                    using virtual environments.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Advantages -->
+    <section>
+
+        <h2 class="title">Advantages of VR</h2>
+
+        <div class="content">
+
+            <div class="advantage">
+                <h3>Immersive Experience</h3>
+                <p>
+                    VR provides users with a feeling of being inside a
+                    virtual environment.
+                </p>
+            </div>
+
+            <div class="advantage">
+                <h3>Interactive Learning</h3>
+                <p>
+                    Students can learn through realistic simulations
+                    and practical experiences.
+                </p>
+            </div>
+
+            <div class="advantage">
+                <h3>Safe Training</h3>
+                <p>
+                    Dangerous situations can be simulated without
+                    exposing people to real-world risks.
+                </p>
+            </div>
+
+            <div class="advantage">
+                <h3>Better Visualization</h3>
+                <p>
+                    Complex objects and environments can be viewed
+                    in three dimensions.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Challenges -->
+    <section class="application">
+
+        <h2 class="title">Challenges of VR</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>💰 Cost</h3>
+                <p>
+                    High-quality VR equipment can be expensive.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤢 Motion Sickness</h3>
+                <p>
+                    Some users may experience dizziness or discomfort.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🔋 Hardware</h3>
+                <p>
+                    VR systems may require powerful computers and devices.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🔒 Privacy</h3>
+                <p>
+                    VR devices can collect movement and user interaction data.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Future -->
+    <section class="future" id="future">
+
+        <h2 class="title">Future of Virtual Reality</h2>
+
+        <div class="content">
+
+            <p>
+                The future of Virtual Reality is expected to become more
+                advanced and accessible. Improvements in Artificial
+                Intelligence, graphics, sensors and wireless technology
+                can make VR environments more realistic.
+            </p>
+
+            <br>
+
+            <p>
+                VR may become increasingly important in education,
+                healthcare, entertainment, engineering, business and
+                communication.
+            </p>
+
+            <a href="#home" class="btn">Back to Top</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 <span>Virtual Reality Overview</span>
+        </p>
+
+        <p>
+            Created for Educational Purpose
+        </p>
+
+    </footer>
+
+</body>
+</html>
